@@ -8,8 +8,15 @@
 
     <title>Clock</title>
 </head>
-<body>
+<body style="height: 100vh;">
     <div class="location" id='loc'>00</div>
+    <div class="onoffswitch" id="changeMode" onclick="changeMode()" style="position:absolute;right:30px;">
+        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" tabindex="0" checked>
+        <label class="onoffswitch-label" for="myonoffswitch">
+            <span class="onoffswitch-inner"></span>
+            <span class="onoffswitch-switch"></span>
+        </label>
+    </div>
     <div class="display">
         <div class="panel1">
         <span id="hour">00</span>
@@ -22,5 +29,6 @@
     
 
     <script src="script.js"></script>
+    <script src="changeMode.js"></script>
 </body>
 </html>
